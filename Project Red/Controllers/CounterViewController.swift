@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import RealmSwift
 
 class CounterViewController: UIViewController {
+    let realm = try! Realm()
     var pokemon: Pokemon? {
         didSet {
             loadPokemon()
@@ -47,6 +49,7 @@ class CounterViewController: UIViewController {
         if var count = Int(countLabel.text!) {
             count += 1
             countLabel.text = String(count)
+            updatePokemonCount(count)
         }
     }
     
@@ -55,6 +58,19 @@ class CounterViewController: UIViewController {
             if count > 0 {
                 count -= 1
                 countLabel.text = String(count)
+                updatePokemonCount(count)
+            }
+        }
+    }
+    
+    func updatePokemonCount(_ count: Int) {
+        if let safePokemon = pokemon {
+            do {
+                try realm.write {
+                    safePokemon.count = count
+                }
+            } catch {
+                print("Error saving count, \(error)")
             }
         }
     }
