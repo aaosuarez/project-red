@@ -171,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ONF-te-pKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917" y="554"/>
+            <point key="canvasLocation" x="2278" y="222"/>
         </scene>
         <!--Pokedex View Controller-->
         <scene sceneID="LNJ-VA-UZu">
@@ -185,6 +185,9 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="RZ3-XW-lr4" id="Q17-H2-FjA"/>
+                            </connections>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokedexCell" id="9Kf-Qb-3Lh">
@@ -209,7 +212,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lVh-vx-shB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="mHp-KA-CL9" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1683" y="140"/>
+            <point key="canvasLocation" x="1009" y="138"/>
         </scene>
     </scenes>
     <resources>

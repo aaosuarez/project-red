@@ -50,3 +50,21 @@ class PokedexViewController: UITableViewController {
         return cell
     }
 }
+
+//MARK: - UISearchBar
+
+extension PokedexViewController: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        pokemon = pokemon?.filter("name CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "id", ascending: true)
+        tableView.reloadData()
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if (searchBar.text?.count == 0){
+            loadPokemon()
+            
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+        }
+    }
+}
