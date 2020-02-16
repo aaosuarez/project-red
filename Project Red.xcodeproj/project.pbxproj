@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2088A0DC3E007AE101ACA728 /* libPods-Project Red.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F213FD29DF547D5027F6DBE /* libPods-Project Red.a */; };
-		9331306F23F90079006C3332 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9331306F23F90079006C3332 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9331307823F91176006C3332 /* default-v0.realm in Resources */ = {isa = PBXBuildFile; fileRef = 9331307723F91176006C3332 /* default-v0.realm */; };
 		93BBCDA823DC23E1001708CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDA723DC23E1001708CB /* AppDelegate.swift */; };
 		93BBCDAA23DC23E1001708CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDA923DC23E1001708CB /* SceneDelegate.swift */; };
 		93BBCDAC23DC23E1001708CB /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDAB23DC23E1001708CB /* CounterViewController.swift */; };
@@ -26,7 +27,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9331306F23F90079006C3332 /* BuildFile in Embed Frameworks */,
+				9331306F23F90079006C3332 /* (null) in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +48,7 @@
 		9331305623F8FE7F006C3332 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9331305C23F8FEE5006C3332 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9331305E23F8FEE5006C3332 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9331307723F91176006C3332 /* default-v0.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = "default-v0.realm"; path = "../../../../Desktop/default-v0.realm"; sourceTree = "<group>"; };
 		93BBCDA423DC23E1001708CB /* Project Red.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Red.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BBCDA723DC23E1001708CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93BBCDA923DC23E1001708CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 		93BBCDA623DC23E1001708CB /* Project Red */ = {
 			isa = PBXGroup;
 			children = (
+				9331307723F91176006C3332 /* default-v0.realm */,
 				93BBCDBE23DC30F9001708CB /* Models */,
 				93BBCDC123DCC0C3001708CB /* View */,
 				93BBCDBB23DC2C58001708CB /* Controllers */,
@@ -219,6 +222,7 @@
 				93BBCDB423DC23E2001708CB /* LaunchScreen.storyboard in Resources */,
 				93BBCDB123DC23E2001708CB /* Assets.xcassets in Resources */,
 				93BBCDAF23DC23E1001708CB /* Main.storyboard in Resources */,
+				9331307823F91176006C3332 /* default-v0.realm in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

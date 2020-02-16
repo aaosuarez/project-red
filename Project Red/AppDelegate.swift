@@ -13,8 +13,16 @@ import RealmSwift
 class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         do {
+            let defaultRealmPath = Realm.Configuration.defaultConfiguration.fileURL!
+            let bundleRealmPath = Bundle.main.url(forResource: "default-v0", withExtension: "realm")
+            if (!FileManager.default.fileExists(atPath: defaultRealmPath.path)) {
+                do {
+                    try FileManager.default.copyItem(at: bundleRealmPath!, to: defaultRealmPath)
+                } catch let error {
+                    print("error copying seed: \(error)")
+                }
+            }
             _ = try Realm()
-//            print(Realm.Configuration.defaultConfiguration.fileURL)
         } catch {
             print("Error initializing Realm \(error)")
         }
