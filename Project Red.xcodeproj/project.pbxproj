@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		84E04E84618E7D19AC744267 /* Pods_Project_Red.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A24F7DE64AD0BDBC7DF985C5 /* Pods_Project_Red.framework */; };
+		2088A0DC3E007AE101ACA728 /* libPods-Project Red.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F213FD29DF547D5027F6DBE /* libPods-Project Red.a */; };
+		9331306F23F90079006C3332 /* BuildFile in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		93BBCDA823DC23E1001708CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDA723DC23E1001708CB /* AppDelegate.swift */; };
 		93BBCDAA23DC23E1001708CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDA923DC23E1001708CB /* SceneDelegate.swift */; };
 		93BBCDAC23DC23E1001708CB /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDAB23DC23E1001708CB /* CounterViewController.swift */; };
@@ -15,14 +16,37 @@
 		93BBCDB123DC23E2001708CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93BBCDB023DC23E2001708CB /* Assets.xcassets */; };
 		93BBCDB423DC23E2001708CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93BBCDB223DC23E2001708CB /* LaunchScreen.storyboard */; };
 		93BBCDBD23DC2C96001708CB /* PokedexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDBC23DC2C96001708CB /* PokedexViewController.swift */; };
-		93BBCDC023DCBEDA001708CB /* PokedexEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDBF23DCBEDA001708CB /* PokedexEntry.swift */; };
 		93BBCDC323DCC6C9001708CB /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDC223DCC6C9001708CB /* Pokemon.swift */; };
-		93BBCDC823DD1992001708CB /* PokedexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDC623DD1992001708CB /* PokedexCell.swift */; };
-		93BBCDC923DD1992001708CB /* PokedexCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93BBCDC723DD1992001708CB /* PokedexCell.xib */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9331307023F90079006C3332 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9331306F23F90079006C3332 /* BuildFile in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		1BD26FB24D489BEAABF25D32 /* Pods-Project Red.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Red.debug.xcconfig"; path = "Target Support Files/Pods-Project Red/Pods-Project Red.debug.xcconfig"; sourceTree = "<group>"; };
+		5991C32BEDF489EF7BB9F025 /* Pods-Project Red.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Red.release.xcconfig"; path = "Target Support Files/Pods-Project Red/Pods-Project Red.release.xcconfig"; sourceTree = "<group>"; };
+		6F213FD29DF547D5027F6DBE /* libPods-Project Red.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Project Red.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		805F4679345CF867C15BCFF8 /* Pods-Project Red.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Red.debug.xcconfig"; path = "Target Support Files/Pods-Project Red/Pods-Project Red.debug.xcconfig"; sourceTree = "<group>"; };
+		93243F7D23F8F47E00108025 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93243F8323F8F50600108025 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9331303223F8FBF3006C3332 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "../../../Downloads/realm-swift-4.3.2/ios/swift-11.3/RealmSwift.framework"; sourceTree = "<group>"; };
+		9331303323F8FBF3006C3332 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "../../../Downloads/realm-swift-4.3.2/ios/swift-11.3/Realm.framework"; sourceTree = "<group>"; };
+		9331304C23F8FDFB006C3332 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9331304D23F8FDFB006C3332 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9331305523F8FE7F006C3332 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9331305623F8FE7F006C3332 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9331305C23F8FEE5006C3332 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9331305E23F8FEE5006C3332 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BBCDA423DC23E1001708CB /* Project Red.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Red.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BBCDA723DC23E1001708CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93BBCDA923DC23E1001708CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,12 +56,7 @@
 		93BBCDB323DC23E2001708CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93BBCDB523DC23E2001708CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93BBCDBC23DC2C96001708CB /* PokedexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewController.swift; sourceTree = "<group>"; };
-		93BBCDBF23DCBEDA001708CB /* PokedexEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexEntry.swift; sourceTree = "<group>"; };
 		93BBCDC223DCC6C9001708CB /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
-		93BBCDC623DD1992001708CB /* PokedexCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexCell.swift; sourceTree = "<group>"; };
-		93BBCDC723DD1992001708CB /* PokedexCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokedexCell.xib; sourceTree = "<group>"; };
-		A24F7DE64AD0BDBC7DF985C5 /* Pods_Project_Red.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project_Red.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F55F06273F0C5369357B1DAF /* Pods-Project Red.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project Red.release.xcconfig"; path = "Target Support Files/Pods-Project Red/Pods-Project Red.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84E04E84618E7D19AC744267 /* Pods_Project_Red.framework in Frameworks */,
+				2088A0DC3E007AE101ACA728 /* libPods-Project Red.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +74,17 @@
 		3A0869280982D34746B634C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A24F7DE64AD0BDBC7DF985C5 /* Pods_Project_Red.framework */,
+				9331305C23F8FEE5006C3332 /* Realm.framework */,
+				9331305E23F8FEE5006C3332 /* RealmSwift.framework */,
+				9331305523F8FE7F006C3332 /* Realm.framework */,
+				9331305623F8FE7F006C3332 /* RealmSwift.framework */,
+				9331304C23F8FDFB006C3332 /* Realm.framework */,
+				9331304D23F8FDFB006C3332 /* RealmSwift.framework */,
+				93243F8323F8F50600108025 /* Realm.framework */,
+				93243F7D23F8F47E00108025 /* Realm.framework */,
+				9331303323F8FBF3006C3332 /* Realm.framework */,
+				9331303223F8FBF3006C3332 /* RealmSwift.framework */,
+				6F213FD29DF547D5027F6DBE /* libPods-Project Red.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -63,8 +92,8 @@
 		715C1D399AF5DCDE5CB9B951 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1BD26FB24D489BEAABF25D32 /* Pods-Project Red.debug.xcconfig */,
-				F55F06273F0C5369357B1DAF /* Pods-Project Red.release.xcconfig */,
+				805F4679345CF867C15BCFF8 /* Pods-Project Red.debug.xcconfig */,
+				5991C32BEDF489EF7BB9F025 /* Pods-Project Red.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -114,7 +143,6 @@
 		93BBCDBE23DC30F9001708CB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				93BBCDBF23DCBEDA001708CB /* PokedexEntry.swift */,
 				93BBCDC223DCC6C9001708CB /* Pokemon.swift */,
 			);
 			path = Models;
@@ -124,8 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				93BBCDAD23DC23E1001708CB /* Main.storyboard */,
-				93BBCDC623DD1992001708CB /* PokedexCell.swift */,
-				93BBCDC723DD1992001708CB /* PokedexCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -137,11 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93BBCDB823DC23E2001708CB /* Build configuration list for PBXNativeTarget "Project Red" */;
 			buildPhases = (
-				936AB1B25374DE4F20C1825F /* [CP] Check Pods Manifest.lock */,
+				6955767D98705340518C2951 /* [CP] Check Pods Manifest.lock */,
 				93BBCDA023DC23E1001708CB /* Sources */,
 				93BBCDA123DC23E1001708CB /* Frameworks */,
 				93BBCDA223DC23E1001708CB /* Resources */,
-				38DBEDD3AA5D76F8843956A8 /* [CP] Embed Pods Frameworks */,
+				9331307023F90079006C3332 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,7 +216,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93BBCDC923DD1992001708CB /* PokedexCell.xib in Resources */,
 				93BBCDB423DC23E2001708CB /* LaunchScreen.storyboard in Resources */,
 				93BBCDB123DC23E2001708CB /* Assets.xcassets in Resources */,
 				93BBCDAF23DC23E1001708CB /* Main.storyboard in Resources */,
@@ -200,24 +225,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38DBEDD3AA5D76F8843956A8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Project Red/Pods-Project Red-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Project Red/Pods-Project Red-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Project Red/Pods-Project Red-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		936AB1B25374DE4F20C1825F /* [CP] Check Pods Manifest.lock */ = {
+		6955767D98705340518C2951 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -248,8 +256,6 @@
 			files = (
 				93BBCDBD23DC2C96001708CB /* PokedexViewController.swift in Sources */,
 				93BBCDAC23DC23E1001708CB /* CounterViewController.swift in Sources */,
-				93BBCDC823DD1992001708CB /* PokedexCell.swift in Sources */,
-				93BBCDC023DCBEDA001708CB /* PokedexEntry.swift in Sources */,
 				93BBCDA823DC23E1001708CB /* AppDelegate.swift in Sources */,
 				93BBCDAA23DC23E1001708CB /* SceneDelegate.swift in Sources */,
 				93BBCDC323DCC6C9001708CB /* Pokemon.swift in Sources */,
@@ -394,7 +400,7 @@
 		};
 		93BBCDB923DC23E2001708CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BD26FB24D489BEAABF25D32 /* Pods-Project Red.debug.xcconfig */;
+			baseConfigurationReference = 805F4679345CF867C15BCFF8 /* Pods-Project Red.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -413,11 +419,16 @@
 		};
 		93BBCDBA23DC23E2001708CB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F55F06273F0C5369357B1DAF /* Pods-Project Red.release.xcconfig */;
+			baseConfigurationReference = 5991C32BEDF489EF7BB9F025 /* Pods-Project Red.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Q432VAH28;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Realm\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RealmSwift\"",
+				);
 				INFOPLIST_FILE = "Project Red/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

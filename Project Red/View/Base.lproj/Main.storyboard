@@ -123,57 +123,6 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
         <!--Pokedex View Controller-->
-        <scene sceneID="pxS-zp-6nT">
-            <objects>
-                <viewController id="GPv-Lv-4dj" customClass="PokedexViewController" customModule="Project_Red" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9Rc-Xn-0kV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BnG-wN-Vr9">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <subviews>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="oIA-7l-v5j">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </searchBar>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3y2-ih-lwY">
-                                        <rect key="frame" x="0.0" y="100" width="414" height="752"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                        <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PokedexCell" id="KXz-xP-iYG">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KXz-xP-iYG" id="9Fs-y6-Jgu">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                </tableViewCellContentView>
-                                            </tableViewCell>
-                                        </prototypes>
-                                    </tableView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="BnG-wN-Vr9" firstAttribute="trailing" secondItem="s9p-kj-hME" secondAttribute="trailing" id="8ai-oh-CcM"/>
-                            <constraint firstItem="BnG-wN-Vr9" firstAttribute="leading" secondItem="s9p-kj-hME" secondAttribute="leading" id="HaP-IJ-Q5K"/>
-                            <constraint firstAttribute="bottom" secondItem="BnG-wN-Vr9" secondAttribute="bottom" id="OA1-5c-N0z"/>
-                            <constraint firstItem="BnG-wN-Vr9" firstAttribute="top" secondItem="s9p-kj-hME" secondAttribute="top" id="bs8-cR-ecB"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="s9p-kj-hME"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="179-Tn-ST7"/>
-                    <connections>
-                        <outlet property="searchBar" destination="oIA-7l-v5j" id="mlJ-xB-Ohm"/>
-                        <outlet property="tableView" destination="3y2-ih-lwY" id="82M-dm-0Kq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ONF-te-pKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2278" y="222"/>
-        </scene>
-        <!--Pokedex View Controller-->
         <scene sceneID="LNJ-VA-UZu">
             <objects>
                 <tableViewController id="RZ3-XW-lr4" customClass="PokedexViewController" customModule="Project_Red" customModuleProvider="target" sceneMemberID="viewController">

@@ -1,0 +1,6 @@
+module Pods_Project_Red {
+  umbrella header "Pods-Project Red-umbrella.h"
+
+  export *
+  module * { export * }
+}
