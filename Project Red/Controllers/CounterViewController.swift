@@ -28,6 +28,10 @@ class CounterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeUp))
+        swipeUp.direction = .up
+        self.view.addGestureRecognizer(swipeUp)
     }
     
     func loadPokemon() {
@@ -47,6 +51,10 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func pokedexButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToPokedex", sender: self)
+    }
+    
+    @objc func swipeUp(_ sender: UISwipeGestureRecognizer) {
         performSegue(withIdentifier: "goToPokedex", sender: self)
     }
     
