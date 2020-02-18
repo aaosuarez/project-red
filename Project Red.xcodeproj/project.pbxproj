@@ -10,6 +10,7 @@
 		2088A0DC3E007AE101ACA728 /* libPods-Project Red.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F213FD29DF547D5027F6DBE /* libPods-Project Red.a */; };
 		9331306F23F90079006C3332 /* (null) in Embed Frameworks */ = {isa = PBXBuildFile; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9331307823F91176006C3332 /* default-v0.realm in Resources */ = {isa = PBXBuildFile; fileRef = 9331307723F91176006C3332 /* default-v0.realm */; };
+		9360392B23FBAAC700FC0BAF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9360392A23FBAAC700FC0BAF /* Constants.swift */; };
 		93BBCDA823DC23E1001708CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDA723DC23E1001708CB /* AppDelegate.swift */; };
 		93BBCDAA23DC23E1001708CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDA923DC23E1001708CB /* SceneDelegate.swift */; };
 		93BBCDAC23DC23E1001708CB /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBCDAB23DC23E1001708CB /* CounterViewController.swift */; };
@@ -49,6 +50,7 @@
 		9331305C23F8FEE5006C3332 /* Realm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Realm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9331305E23F8FEE5006C3332 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9331307723F91176006C3332 /* default-v0.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = "default-v0.realm"; path = "../../../../Desktop/default-v0.realm"; sourceTree = "<group>"; };
+		9360392A23FBAAC700FC0BAF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		93BBCDA423DC23E1001708CB /* Project Red.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project Red.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BBCDA723DC23E1001708CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93BBCDA923DC23E1001708CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				93BBCDB023DC23E2001708CB /* Assets.xcassets */,
 				93BBCDB223DC23E2001708CB /* LaunchScreen.storyboard */,
 				93BBCDB523DC23E2001708CB /* Info.plist */,
+				9360392A23FBAAC700FC0BAF /* Constants.swift */,
 			);
 			path = "Project Red";
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				93BBCDBD23DC2C96001708CB /* PokedexViewController.swift in Sources */,
 				93BBCDAC23DC23E1001708CB /* CounterViewController.swift in Sources */,
 				93BBCDA823DC23E1001708CB /* AppDelegate.swift in Sources */,
+				9360392B23FBAAC700FC0BAF /* Constants.swift in Sources */,
 				93BBCDAA23DC23E1001708CB /* SceneDelegate.swift in Sources */,
 				93BBCDC323DCC6C9001708CB /* Pokemon.swift in Sources */,
 			);

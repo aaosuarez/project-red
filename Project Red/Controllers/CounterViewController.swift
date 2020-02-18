@@ -21,6 +21,10 @@ class CounterViewController: UIViewController {
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var minusButton: UIButton!
+    @IBOutlet weak var defaultChanceLabel: UILabel!
+    @IBOutlet weak var defaultChanceSCLabel: UILabel!
+    @IBOutlet weak var masudaChanceLabel: UILabel!
+    @IBOutlet weak var masudaChanceSCLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +36,7 @@ class CounterViewController: UIViewController {
             countLabel.text = String(pokemon!.count)
             addButton.isEnabled = true
             minusButton.isEnabled = true
+            updatePercentageLabels(pokemon: pokemon!)
         }
     }
     
@@ -68,11 +73,19 @@ class CounterViewController: UIViewController {
             do {
                 try realm.write {
                     safePokemon.count = count
+                    updatePercentageLabels(pokemon: safePokemon)
                 }
             } catch {
                 print("Error saving count, \(error)")
             }
         }
+    }
+    
+    func updatePercentageLabels(pokemon: Pokemon) {
+        defaultChanceLabel.text = String(format: "%.4f", pokemon.catchPercentage(K.EncounterRates.defaultRate)) + "%"
+        defaultChanceSCLabel.text = String(format: "%.4f", pokemon.catchPercentage(K.EncounterRates.defaultShinyCharmRate)) + "%"
+        masudaChanceLabel.text = String(format: "%.4f", pokemon.catchPercentage(K.EncounterRates.masudaRate)) + "%"
+        masudaChanceSCLabel.text = String(format: "%.4f", pokemon.catchPercentage(K.EncounterRates.masudaShinyCharmRate)) + "%"
     }
 }
 
